@@ -3,7 +3,7 @@ lock '3.9.0'
 
 set :application, 'dd_next_gold'
 set :repo_url, 'git@github.com:czuger/dd-next-gold.git'
-set :rvm_ruby_version, '2.3.1'
+# set :rvm_ruby_version, '2.3.1'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
