@@ -7,30 +7,30 @@
       .input-group
         %span.input-group-addon{ id: :ppl }
           = t( 'gold.labels.pp' )
-        = number_field_tag 'pp', '', class: 'form-control weight-compute', 'aria-describedby': :ppl
+        = number_field_tag 'pp', '', min: 0, class: 'form-control weight-compute', 'aria-describedby': :ppl
 
     .col-2
       .input-group
         %span.input-group-addon{ id: :gpl }
           = t( 'gold.labels.gp' )
-        = number_field_tag 'gp', '', class: 'form-control weight-compute', 'aria-describedby': :gpl
+        = number_field_tag 'gp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gpl
 
     .col-2
       .input-group
         %span.input-group-addon{ id: :epl }
           = t( 'gold.labels.ep' )
-        = number_field_tag 'ep', '', class: 'form-control weight-compute', 'aria-describedby': :epl
+        = number_field_tag 'ep', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :epl
 
     .col-2
       .input-group
         %span.input-group-addon{ id: :spl }
           = t( 'gold.labels.sp' )
-        = number_field_tag 'sp', '', class: 'form-control weight-compute', 'aria-describedby': :spl
+        = number_field_tag 'sp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :spl
     .col-2
       .input-group
         %span.input-group-addon{ id: :cpl }
           = t( 'gold.labels.cp' )
-        = number_field_tag 'cp', '', class: 'form-control weight-compute', 'aria-describedby': :cpl
+        = number_field_tag 'cp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cpl
 
   %hr
 
