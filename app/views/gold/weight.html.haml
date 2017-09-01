@@ -1,0 +1,48 @@
+.page-header
+  %h1
+    = t( '.title' )
+
+  .row
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :pp }
+          = t( 'gold.labels.pp' )
+        = number_field_tag 'pp', '', class: 'form-control', 'aria-describedby': :pp
+
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :gp }
+          = t( 'gold.labels.gp' )
+        = number_field_tag 'gp', '', class: 'form-control', 'aria-describedby': :gp
+
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :ep }
+          = t( 'gold.labels.ep' )
+        = number_field_tag 'ep', '', class: 'form-control', 'aria-describedby': :ep
+
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :sp }
+          = t( 'gold.labels.sp' )
+        = number_field_tag 'sp', '', class: 'form-control', 'aria-describedby': :sp
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :cp }
+          = t( 'gold.labels.cp' )
+        = number_field_tag 'cp', '', class: 'form-control', 'aria-describedby': :cp
+
+  %hr
+
+  %br
+  .row
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :sp }
+          = t( 'gold.labels.sp' )
+        = number_field_tag 'sp', '', class: 'form-control', 'aria-describedby': :sp
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :cp }
+          = t( 'gold.labels.cp' )
+        = number_field_tag 'cp', '', class: 'form-control', 'aria-describedby': :cp
