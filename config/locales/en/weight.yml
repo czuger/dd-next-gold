@@ -1,7 +1,7 @@
 en:
   gold:
     weight:
-      title: Poids de l'or
+      title: Gold weight
     menu_title: Weight
     labels:
         pp: pp
