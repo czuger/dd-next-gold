@@ -5,32 +5,32 @@
   .row
     .col-2
       .input-group
-        %span.input-group-addon{ id: :pp }
+        %span.input-group-addon{ id: :ppl }
           = t( 'gold.labels.pp' )
-        = number_field_tag 'pp', '', class: 'form-control', 'aria-describedby': :pp
+        = number_field_tag 'pp', '', class: 'form-control weight-compute', 'aria-describedby': :ppl
 
     .col-2
       .input-group
-        %span.input-group-addon{ id: :gp }
+        %span.input-group-addon{ id: :gpl }
           = t( 'gold.labels.gp' )
-        = number_field_tag 'gp', '', class: 'form-control', 'aria-describedby': :gp
+        = number_field_tag 'gp', '', class: 'form-control weight-compute', 'aria-describedby': :gpl
 
     .col-2
       .input-group
-        %span.input-group-addon{ id: :ep }
+        %span.input-group-addon{ id: :epl }
           = t( 'gold.labels.ep' )
-        = number_field_tag 'ep', '', class: 'form-control', 'aria-describedby': :ep
+        = number_field_tag 'ep', '', class: 'form-control weight-compute', 'aria-describedby': :epl
 
     .col-2
       .input-group
-        %span.input-group-addon{ id: :sp }
+        %span.input-group-addon{ id: :spl }
           = t( 'gold.labels.sp' )
-        = number_field_tag 'sp', '', class: 'form-control', 'aria-describedby': :sp
+        = number_field_tag 'sp', '', class: 'form-control weight-compute', 'aria-describedby': :spl
     .col-2
       .input-group
-        %span.input-group-addon{ id: :cp }
+        %span.input-group-addon{ id: :cpl }
           = t( 'gold.labels.cp' )
-        = number_field_tag 'cp', '', class: 'form-control', 'aria-describedby': :cp
+        = number_field_tag 'cp', '', class: 'form-control weight-compute', 'aria-describedby': :cpl
 
   %hr
 
@@ -38,11 +38,11 @@
   .row
     .col-2
       .input-group
-        %span.input-group-addon{ id: :sp }
-          = t( 'gold.labels.sp' )
-        = number_field_tag 'sp', '', class: 'form-control', 'aria-describedby': :sp
+        %span.input-group-addon{ id: :weightlbl }
+          = t( 'gold.labels.weightlb' )
+        = number_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl
     .col-2
       .input-group
-        %span.input-group-addon{ id: :cp }
-          = t( 'gold.labels.cp' )
-        = number_field_tag 'cp', '', class: 'form-control', 'aria-describedby': :cp
+        %span.input-group-addon{ id: :weightkgl }
+          = t( 'gold.labels.weightkg' )
+        = number_field_tag 'weightkg', '', class: 'form-control', 'aria-describedby': :weightkgl

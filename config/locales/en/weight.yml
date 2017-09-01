@@ -1,4 +1,4 @@
-fr:
+en:
   gold:
     weight:
       title: Poids de l'or
@@ -27,5 +27,4 @@ fr:
         ep: pe
         sp: pa
         cp: pc
-        weightlb: Lb
-        weightkg: Kg
+        weight: Lb
