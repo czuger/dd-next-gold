@@ -23,6 +23,7 @@ set :repo_url, 'git@github.com:czuger/dd-next-gold.git'
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_files, "config/secrets.yml"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
@@ -34,4 +35,4 @@ set :repo_url, 'git@github.com:czuger/dd-next-gold.git'
 # set :local_user, -> { `git config user.name`.chomp }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 1
