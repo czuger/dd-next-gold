@@ -2,3 +2,4 @@ I18n.config.load_path += Dir['/home/ced/ruby/dd-next-gold/config/locales/**/*.{r
 
 I18n.config.available_locales = [ :fr, :en ]
 I18n.default_locale = :en
+I18n.locale = :en
