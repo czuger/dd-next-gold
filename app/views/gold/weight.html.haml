@@ -3,30 +3,30 @@
     = t( '.title' )
 
   .row
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :ppl }
           = t( 'gold.labels.pp' )
         = number_field_tag 'pp', '', min: 0, class: 'form-control weight-compute', 'aria-describedby': :ppl
 
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :gpl }
           = t( 'gold.labels.gp' )
         = number_field_tag 'gp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gpl
 
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :epl }
           = t( 'gold.labels.ep' )
         = number_field_tag 'ep', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :epl
 
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :spl }
           = t( 'gold.labels.sp' )
         = number_field_tag 'sp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :spl
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cpl }
           = t( 'gold.labels.cp' )
@@ -35,12 +35,12 @@
   %br
 
   .row
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weightlbl }
           = t( 'gold.labels.weightlb' )
         = text_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl, disabled: true
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weightkgl }
           = t( 'gold.labels.weightkg' )
@@ -49,13 +49,13 @@
   %hr
 
   .row
-    .col-4
+    .col-12.col-sm-4
       .input-group
         %span.input-group-addon{ id: :change_tax_l }
           = t( 'gold.labels.change_tax' )
         = number_field_tag 'change_tax', 15, min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
 
-    .col-4
+    .col-12.col-sm-4
       .input-group
         %span.input-group-addon{ id: :change_cost_l }
           = t( 'gold.labels.change_cost' )
@@ -64,26 +64,26 @@
   %br
 
   .row
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :pp_change_l }
           = t( 'gold.labels.pp' )
         = text_field_tag 'pp_change', '', min: 0, class: 'form-control', 'aria-describedby': :pp_change_l, disabled: true
 
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :gp_change_l }
           = t( 'gold.labels.gp' )
         = text_field_tag 'gp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :gp_change_l, disabled: true
 
-    .col-2
+    .col-sm-2
 
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :sp_change_l }
           = t( 'gold.labels.sp' )
         = text_field_tag 'sp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :sp_change_l, disabled: true
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cp_change_l }
           = t( 'gold.labels.cp' )
@@ -92,12 +92,12 @@
   %br
 
   .row
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weight_change_lbl }
           = t( 'gold.labels.weightlb' )
         = text_field_tag 'weight_change_lb', '', class: 'form-control', 'aria-describedby': :weight_change_lbl, disabled: true
-    .col-2
+    .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weight_change_kgl }
           = t( 'gold.labels.weightkg' )
