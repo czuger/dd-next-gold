@@ -16,7 +16,7 @@
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     -# Don't turn on async JS load, don't work
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true, async: Rails.env.production?
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
 
