@@ -1,6 +1,6 @@
 class GoldController < ApplicationController
 
-  caches_page :weight
+  caches_action :weight
 
   def weight
   end

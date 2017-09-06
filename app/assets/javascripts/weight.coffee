@@ -73,7 +73,7 @@ load_data = ->
     $('#ep').val(window.localStorage.ep)
     $('#gp').val(window.localStorage.gp)
     $('#pp').val(window.localStorage.pp)
-    $('#change_tax').val(window.localStorage.change_tax)
+    $('#change_tax').val(window.localStorage.change_tax) if window.localStorage.change_tax
 
 
 $(document).on 'turbolinks:load', ->

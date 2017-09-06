@@ -18,7 +18,7 @@ GEM
       rack-test (~> 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionpack-page_caching (1.1.0)
+    actionpack-action_caching (1.2.0)
       actionpack (>= 4.0.0, < 6)
     actionview (5.0.5)
       activesupport (= 5.0.5)
@@ -212,7 +212,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack-page_caching
+  actionpack-action_caching
   bootstrap (~> 4.0.0.alpha6)
   byebug
   capistrano (~> 3.6)

@@ -63,7 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'haml-rails'
-gem "actionpack-page_caching"
+# gem "actionpack-page_caching"
+gem 'actionpack-action_caching'
 
 # For heroku
 gem 'rails_12factor', group: :production
