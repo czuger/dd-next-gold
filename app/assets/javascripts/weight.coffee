@@ -8,21 +8,26 @@ compute_weight = ->
   cp = parseInt($('#cp').val())
   cp = 0 unless cp
 
-  sp = $('#sp').val()
+  sp = parseInt($('#sp').val())
   sp = 0 unless sp
   cp += sp * 10
 
-  ep = $('#ep').val()
+  ep = parseInt($('#ep').val())
   ep = 0 unless ep
   cp += ep * 50
 
-  gp = $('#gp').val()
+  gp = parseInt($('#gp').val())
   gp = 0 unless gp
   cp += gp * 100
 
-  pp = $('#pp').val()
+  pp = parseInt($('#pp').val())
   pp = 0 unless pp
   cp += pp * 1000
+
+  change = parseInt($('#change_tax').val())
+  tax = Math.floor( cp / change )
+  $('#change_cost').val(tax)
+  cp -= tax
 
   final_pp = Math.floor( cp / 1000 )
   cp -= final_pp * 1000
@@ -44,10 +49,18 @@ compute_weight = ->
   $('#weight_change_kg').val(Math.floor(sum/100))
   $('#weight_change_lb').val(Math.floor(sum/50))
 
+
+
 $(document).on 'turbolinks:load', ->
   $('.weight-compute').change ->
     compute_weight()
 
   $('.weight-compute').keyup ->
+    compute_weight()
+
+  $('#change_tax').change ->
+    compute_weight()
+
+  $('#change_tax').keyup ->
     compute_weight()
 

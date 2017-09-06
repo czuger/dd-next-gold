@@ -11,3 +11,5 @@ en:
         cp: cp
         weightlb: Lb
         weightkg: Kg
+        change_tax: Change tax (1/)
+        change_cost: Change cost (pc)

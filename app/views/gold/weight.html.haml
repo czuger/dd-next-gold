@@ -49,28 +49,45 @@
   %hr
 
   .row
+    .col-4
+      .input-group
+        %span.input-group-addon{ id: :change_tax_l }
+          = t( 'gold.labels.change_tax' )
+        = number_field_tag 'change_tax', 15, min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
+
+    .col-4
+      .input-group
+        %span.input-group-addon{ id: :change_cost_l }
+          = t( 'gold.labels.change_cost' )
+        = text_field_tag 'change_cost', '', min: 0, class: 'form-control', 'aria-describedby': :change_cost_l, disabled: true
+
+  %br
+
+  .row
     .col-2
       .input-group
         %span.input-group-addon{ id: :pp_change_l }
           = t( 'gold.labels.pp' )
-        = text_field_tag 'pp_change', '', min: 0, class: 'form-control weight-compute', 'aria-describedby': :pp_change_l, disabled: true
+        = text_field_tag 'pp_change', '', min: 0, class: 'form-control', 'aria-describedby': :pp_change_l, disabled: true
 
     .col-2
       .input-group
         %span.input-group-addon{ id: :gp_change_l }
           = t( 'gold.labels.gp' )
-        = text_field_tag 'gp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gp_change_l, disabled: true
+        = text_field_tag 'gp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :gp_change_l, disabled: true
+
+    .col-2
 
     .col-2
       .input-group
         %span.input-group-addon{ id: :sp_change_l }
           = t( 'gold.labels.sp' )
-        = text_field_tag 'sp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :sp_change_l, disabled: true
+        = text_field_tag 'sp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :sp_change_l, disabled: true
     .col-2
       .input-group
         %span.input-group-addon{ id: :cp_change_l }
           = t( 'gold.labels.cp' )
-        = text_field_tag 'cp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cp_change_l, disabled: true
+        = text_field_tag 'cp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :cp_change_l, disabled: true
 
   %br
 

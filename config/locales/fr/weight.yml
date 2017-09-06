@@ -11,3 +11,5 @@ fr:
         cp: pc
         weightlb: Lb
         weightkg: Kg
+        change_tax: Taux de conversion (1/)
+        change_cost: Cout de conversion (pc)
