@@ -32,17 +32,56 @@
           = t( 'gold.labels.cp' )
         = number_field_tag 'cp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cpl
 
-  %hr
-
   %br
+
   .row
     .col-2
       .input-group
         %span.input-group-addon{ id: :weightlbl }
           = t( 'gold.labels.weightlb' )
-        = number_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl
+        = text_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl, disabled: true
     .col-2
       .input-group
         %span.input-group-addon{ id: :weightkgl }
           = t( 'gold.labels.weightkg' )
-        = number_field_tag 'weightkg', '', class: 'form-control', 'aria-describedby': :weightkgl
+        = text_field_tag 'weightkg', '', class: 'form-control', 'aria-describedby': :weightkgl, disabled: true
+
+  %hr
+
+  .row
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :pp_change_l }
+          = t( 'gold.labels.pp' )
+        = text_field_tag 'pp_change', '', min: 0, class: 'form-control weight-compute', 'aria-describedby': :pp_change_l, disabled: true
+
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :gp_change_l }
+          = t( 'gold.labels.gp' )
+        = text_field_tag 'gp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gp_change_l, disabled: true
+
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :sp_change_l }
+          = t( 'gold.labels.sp' )
+        = text_field_tag 'sp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :sp_change_l, disabled: true
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :cp_change_l }
+          = t( 'gold.labels.cp' )
+        = text_field_tag 'cp_change', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cp_change_l, disabled: true
+
+  %br
+
+  .row
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :weight_change_lbl }
+          = t( 'gold.labels.weightlb' )
+        = text_field_tag 'weight_change_lb', '', class: 'form-control', 'aria-describedby': :weight_change_lbl, disabled: true
+    .col-2
+      .input-group
+        %span.input-group-addon{ id: :weight_change_kgl }
+          = t( 'gold.labels.weightkg' )
+        = text_field_tag 'weight_change_kg', '', class: 'form-control', 'aria-describedby': :weight_change_kgl, disabled: true
