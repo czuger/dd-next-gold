@@ -76,8 +76,7 @@ load_data = ->
     $('#change_tax').val(window.localStorage.change_tax) if window.localStorage.change_tax
 
 
-$(document).on 'turbolinks:load', ->
-
+start_f = ->
   if typeof Storage != 'undefined'
     $('#database_status').html('Database OK')
     can_save = true
@@ -102,3 +101,10 @@ $(document).on 'turbolinks:load', ->
   $('#change_tax').keyup ->
     save_data()
     compute_weight()
+
+
+$(document).on 'turbolinks:load', ->
+  start_f()
+
+$(window).load ->
+  start_f()
