@@ -26,6 +26,7 @@
         %span.input-group-addon{ id: :spl }
           = t( 'gold.labels.sp' )
         = number_field_tag 'sp', '', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :spl
+
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cpl }
@@ -40,6 +41,7 @@
         %span.input-group-addon{ id: :weightlbl }
           = t( 'gold.labels.weightlb' )
         = text_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl, disabled: true
+
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weightkgl }
@@ -83,6 +85,7 @@
         %span.input-group-addon{ id: :sp_change_l }
           = t( 'gold.labels.sp' )
         = text_field_tag 'sp_change', '', min: 0,  class: 'form-control', 'aria-describedby': :sp_change_l, disabled: true
+
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cp_change_l }
@@ -97,6 +100,7 @@
         %span.input-group-addon{ id: :weight_change_lbl }
           = t( 'gold.labels.weightlb' )
         = text_field_tag 'weight_change_lb', '', class: 'form-control', 'aria-describedby': :weight_change_lbl, disabled: true
+
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :weight_change_kgl }
