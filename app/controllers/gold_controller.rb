@@ -1,5 +1,6 @@
 class GoldController < ApplicationController
 
+  # Need to clear cache on deployment, otherwise CRFS fail.
   # caches_action :weight
 
   def weight

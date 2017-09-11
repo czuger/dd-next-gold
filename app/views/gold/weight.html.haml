@@ -9,6 +9,10 @@
   %hr
 
   .row
+    .col
+      = t( '.input-coins-desc' )
+  %br
+  .row
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :ppl }
@@ -53,25 +57,6 @@
   %hr
 
   .row
-    .col-12.col-sm-4
-      .input-group
-        %span.input-group-addon{ id: :change_tax_l }
-          = t( 'gold.labels.change_tax' )
-        = number_field_tag 'change_tax', 15, min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
-
-    .col-12.col-sm-4
-      #change_cost_padding
-        = t( 'gold.labels.change_cost_part_1' )
-        %span#gp_cost
-        = t( 'gold.labels.gp' )
-        (
-        %span#cp_cost
-        = t( 'gold.labels.cp' )
-        )
-
-  %br
-
-  .row
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :pp_change_l }
@@ -108,6 +93,25 @@
       = '/'
       %span#weight_change_kg
       = t( 'gold.labels.weightkg' )
+
+  %br
+
+  .row
+    .col-12.col-sm-4
+      .input-group
+        %span.input-group-addon{ id: :change_tax_l }
+          = t( 'gold.labels.change_tax' )
+        = number_field_tag 'change_tax', 15, min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
+
+    .col-12.col-sm-4
+      #change_cost_padding
+        = t( 'gold.labels.change_cost_part_1' )
+        %span#gp_cost
+        = t( 'gold.labels.gp' )
+        (
+        %span#cp_cost
+        = t( 'gold.labels.cp' )
+        )
 
   -#%hr
   -#

@@ -1,7 +1,8 @@
 en:
   gold:
     weight:
-      title: Gold weight
+      title: Coins weight
+      input-coins-desc: Input your current coins amount here
       game-icons: Icons come from
     menu_title: Weight
     labels:
