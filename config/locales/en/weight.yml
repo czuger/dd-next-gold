@@ -2,6 +2,7 @@ en:
   gold:
     weight:
       title: Gold weight
+      game-icons: Icons come from
     menu_title: Weight
     labels:
         pp: pp

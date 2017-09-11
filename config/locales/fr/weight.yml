@@ -2,6 +2,8 @@ fr:
   gold:
     weight:
       title: Poids de l'or
+      game-icons: Les icones proviennent de
+#      mentions-legales: Mentions légales
     menu_title: Weight
     labels:
         pp: pp
@@ -15,3 +17,4 @@ fr:
         weightkg: Kg
         change_tax: "Taux de conversion (%)"
         change_cost_part_1: "Coût de la conversion :"
+
