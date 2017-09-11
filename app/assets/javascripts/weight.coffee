@@ -5,8 +5,8 @@ compute_weight = ->
   sum = 0
   $('.weight-compute').each ->
     sum += Number($(this).val())
-  $('#weightkg').val(Math.floor(sum/100))
-  $('#weightlb').val(Math.floor(sum/50))
+  $('#weightkg').html(Math.floor(sum/100))
+  $('#weightlb').html(Math.floor(sum/50))
 
   cp = parseInt($('#cp').val())
   cp = 0 unless cp
@@ -28,12 +28,13 @@ compute_weight = ->
   cp += pp * 1000
 
   change = parseInt($('#change_tax').val())
-  if change > 0
-    tax = Math.floor( cp / change )
-    $('#change_cost').val(tax)
-    cp -= tax
-  else
-    $('#change_cost').val(0)
+
+  cp_tax = if change > 0 then Math.floor( cp * ( change / 100) ) else 0
+  gp_tax = cp_tax / 1000.0
+  cp -= cp_tax
+
+  $('#cp_cost').html(cp_tax)
+  $('#gp_cost').html(gp_tax)
 
   final_pp = Math.floor( cp / 1000 )
   cp -= final_pp * 1000
@@ -52,8 +53,8 @@ compute_weight = ->
   $('#cp_change').val(final_cp)
 
   sum = final_pp + final_gp + final_sp + final_cp
-  $('#weight_change_kg').val(Math.floor(sum/100))
-  $('#weight_change_lb').val(Math.floor(sum/50))
+  $('#weight_change_kg').html(Math.floor(sum/100))
+  $('#weight_change_lb').html(Math.floor(sum/50))
 
 
 save_data = ->

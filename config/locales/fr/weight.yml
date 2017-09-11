@@ -9,7 +9,9 @@ fr:
         ep: pe
         sp: pa
         cp: pc
+        weight_label: "Poids actuel de l'or : "
+        weight_label_after_conversion: "Poids de l'or après conversion : "
         weightlb: Lb
         weightkg: Kg
-        change_tax: Taux de conversion (1/)
-        change_cost: Cout de conversion (pc)
+        change_tax: "Taux de conversion (%)"
+        change_cost_part_1: "Coût de la conversion :"

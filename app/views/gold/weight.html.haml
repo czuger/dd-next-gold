@@ -36,17 +36,13 @@
   %br
 
   .row
-    .col-6.col-sm-2
-      .input-group
-        %span.input-group-addon{ id: :weightlbl }
-          = t( 'gold.labels.weightlb' )
-        = text_field_tag 'weightlb', '', class: 'form-control', 'aria-describedby': :weightlbl, disabled: true
-
-    .col-6.col-sm-2
-      .input-group
-        %span.input-group-addon{ id: :weightkgl }
-          = t( 'gold.labels.weightkg' )
-        = text_field_tag 'weightkg', '', class: 'form-control', 'aria-describedby': :weightkgl, disabled: true
+    .col-12.col-sm-12
+      = t( 'gold.labels.weight_label' )
+      %span#weightlb
+      = t( 'gold.labels.weightlb' )
+      = '/'
+      %span#weightkg
+      = t( 'gold.labels.weightkg' )
 
   %hr
 
@@ -58,10 +54,14 @@
         = number_field_tag 'change_tax', 15, min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
 
     .col-12.col-sm-4
-      .input-group
-        %span.input-group-addon{ id: :change_cost_l }
-          = t( 'gold.labels.change_cost' )
-        = text_field_tag 'change_cost', '', min: 0, class: 'form-control', 'aria-describedby': :change_cost_l, disabled: true
+      #change_cost_padding
+        = t( 'gold.labels.change_cost_part_1' )
+        %span#gp_cost
+        = t( 'gold.labels.gp' )
+        (
+        %span#cp_cost
+        = t( 'gold.labels.cp' )
+        )
 
   %br
 
@@ -95,17 +95,13 @@
   %br
 
   .row
-    .col-6.col-sm-2
-      .input-group
-        %span.input-group-addon{ id: :weight_change_lbl }
-          = t( 'gold.labels.weightlb' )
-        = text_field_tag 'weight_change_lb', '', class: 'form-control', 'aria-describedby': :weight_change_lbl, disabled: true
-
-    .col-6.col-sm-2
-      .input-group
-        %span.input-group-addon{ id: :weight_change_kgl }
-          = t( 'gold.labels.weightkg' )
-        = text_field_tag 'weight_change_kg', '', class: 'form-control', 'aria-describedby': :weight_change_kgl, disabled: true
+    .col-12.col-sm-12
+      = t( 'gold.labels.weight_label_after_conversion' )
+      %span#weight_change_lb
+      = t( 'gold.labels.weightlb' )
+      = '/'
+      %span#weight_change_kg
+      = t( 'gold.labels.weightkg' )
 
   %hr
 

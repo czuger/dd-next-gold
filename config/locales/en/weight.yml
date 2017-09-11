@@ -9,7 +9,9 @@ en:
         ep: ep
         sp: sp
         cp: cp
+        weight_label: "Current weight for gold : "
+        weight_label_after_conversion: "Gold weight after conversion : "
         weightlb: Lb
-        weightkg: Kg
-        change_tax: Change tax (1/)
-        change_cost: Change cost (pc)
+        weightkg: kg
+        change_tax: "Change tax (%)"
+        change_cost_part_1: "Cost of the change :"
