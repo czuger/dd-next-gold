@@ -6,6 +6,7 @@ class LocalesController < ApplicationController
 
     if params[:locale]
       I18n.locale = params[:locale]
+
       return_to = request.referer
 
       parsed_uri = URI.parse(return_to)
