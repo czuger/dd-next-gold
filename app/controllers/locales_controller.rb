@@ -21,6 +21,7 @@ class LocalesController < ApplicationController
 
       redirect_to redirect_host
     end
+
   end
 
 end
