@@ -17,31 +17,31 @@
       .input-group
         %span.input-group-addon{ id: :ppl }
           = t( 'gold.labels.pp' )
-        = number_field_tag 'pp', min: 0, class: 'form-control weight-compute', 'aria-describedby': :ppl
+        = number_field_tag 'pp', min: 0, class: 'form-control weight-compute', 'aria-describedby': :ppl, id: :pp
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :gpl }
           = t( 'gold.labels.gp' )
-        = number_field_tag 'gp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gpl
+        = number_field_tag 'gp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :gpl, id: :gp
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :epl }
           = t( 'gold.labels.ep' )
-        = number_field_tag 'ep', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :epl
+        = number_field_tag 'ep', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :epl, id: :ep
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :spl }
           = t( 'gold.labels.sp' )
-        = number_field_tag 'sp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :spl
+        = number_field_tag 'sp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :spl, id: :sp
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cpl }
           = t( 'gold.labels.cp' )
-        = number_field_tag 'cp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cpl
+        = number_field_tag 'cp', min: 0,  class: 'form-control weight-compute', 'aria-describedby': :cpl, id: :cp
 
   %br
 
@@ -61,13 +61,13 @@
       .input-group
         %span.input-group-addon{ id: :pp_change_l }
           = t( 'gold.labels.pp' )
-        = text_field_tag 'pp_change', min: 0, class: 'form-control', 'aria-describedby': :pp_change_l, disabled: true
+        = text_field_tag 'pp_change', min: 0, class: 'form-control', 'aria-describedby': :pp_change_l, disabled: true, id: :pp_change
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :gp_change_l }
           = t( 'gold.labels.gp' )
-        = text_field_tag 'gp_change', min: 0,  class: 'form-control', 'aria-describedby': :gp_change_l, disabled: true
+        = text_field_tag 'gp_change', min: 0,  class: 'form-control', 'aria-describedby': :gp_change_l, disabled: true, id: :gp_change
 
     .col-sm-2
 
@@ -75,13 +75,13 @@
       .input-group
         %span.input-group-addon{ id: :sp_change_l }
           = t( 'gold.labels.sp' )
-        = text_field_tag 'sp_change', min: 0,  class: 'form-control', 'aria-describedby': :sp_change_l, disabled: true
+        = text_field_tag 'sp_change', min: 0,  class: 'form-control', 'aria-describedby': :sp_change_l, disabled: true, id: :sp_change
 
     .col-6.col-sm-2
       .input-group
         %span.input-group-addon{ id: :cp_change_l }
           = t( 'gold.labels.cp' )
-        = text_field_tag 'cp_change', min: 0,  class: 'form-control', 'aria-describedby': :cp_change_l, disabled: true
+        = text_field_tag 'cp_change', min: 0,  class: 'form-control', 'aria-describedby': :cp_change_l, disabled: true, id: :cp_change
 
   %br
 
@@ -101,7 +101,7 @@
       .input-group
         %span.input-group-addon{ id: :change_tax_l }
           = t( 'gold.labels.change_tax' )
-        = number_field_tag 'change_tax', min: 0, class: 'form-control', 'aria-describedby': :change_tax_l
+        = number_field_tag 'change_tax', min: 0, class: 'form-control', 'aria-describedby': :change_tax_l, id: 'change_tax'
 
     .col-12.col-sm-4
       #change_cost_padding

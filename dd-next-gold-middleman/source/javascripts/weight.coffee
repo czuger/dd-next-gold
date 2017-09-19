@@ -107,5 +107,5 @@ start_f = ->
 #$(document).on 'turbolinks:load', ->
 #  start_f()
 
-$(window).load ->
+$(window).on 'load', ->
   start_f()
