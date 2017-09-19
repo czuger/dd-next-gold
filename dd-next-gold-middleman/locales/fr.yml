@@ -1,0 +1,21 @@
+fr:
+  gold:
+    weight:
+      title: Poids de l'or
+      game-icons: Les icones proviennent de
+      input-coins-desc: Entrez ici les pièces de votre personnage
+#      mentions-legales: Mentions légales
+    menu_title: Weight
+    labels:
+        pp: pp
+        gp: po
+        ep: pe
+        sp: pa
+        cp: pc
+        weight_label: "Poids actuel de votre or : "
+        weight_label_after_conversion: "Poids de l'or après conversion : "
+        weightlb: Lb
+        weightkg: Kg
+        change_tax: "Taux de conversion (%)"
+        change_cost_part_1: "Coût de la conversion :"
+
