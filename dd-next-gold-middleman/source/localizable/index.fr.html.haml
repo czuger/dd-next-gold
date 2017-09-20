@@ -8,16 +8,16 @@
           = t( '.gold.title' )
 
       .dropdown
-        %button#dropdownMenuButton.btn.btn-light.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :type => 'button'}
-          Language
-          .dropdown-menu{'aria-labelledby' => 'dropdownMenuButton'}
-            %a.dropdown-item{:href => '/'}
+        %button#dropdownMenuLink.btn.btn-secondary.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :type => 'button'}
+          Langue
+          .dropdown-menu{'aria-labelledby' => 'dropdownMenuLink'}
+            %a.dropdown-item{:href => '#'}
               .flag-icon
                 %i.flag.flag-gb
-              English
+              Anglais
             %a.dropdown-item{:href => '/fr/index.html' }
               .flag-icon
                 %i.flag.flag-fr
-              French
+              Français
 
   = partial :bdy

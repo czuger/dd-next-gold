@@ -103,6 +103,9 @@ start_f = ->
     save_data()
     compute_weight()
 
+#  $('#dropdownMenuButton').change ->
+#    console.log('language switch')
+
 
 #$(document).on 'turbolinks:load', ->
 #  start_f()
