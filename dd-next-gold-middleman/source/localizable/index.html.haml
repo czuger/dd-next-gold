@@ -1,25 +1,23 @@
 .page-header
 
   %nav.navbar.navbar-light.bg-light.navbar-expand-lg.justify-content-between
-    %a.navbar-brand{:href => "#"}
-      %img.d-inline-block.align-top{:alt => "", :height => "30", :src => "img/cash.svg", :width => "30"}/
+    %a.navbar-brand{:href => '#'}
+      %img.d-inline-block.align-top{:alt => '', :height => '30', :src => '/img/cash.svg', :width => '30'}/
       = t( 'gold.title' )
 
     #navbarNavDropdown.collapse.navbar-collapse
       %ul.navbar-nav
         %li.nav-item.dropdown
-          %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "http://example.com"}
-            Dropdown link
-          .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :href => 'http://example.com'}
+            = I18n.locale == 'en' ? t( 'gold.lang.english' ) : t( 'gold.lang.french' )
+          .dropdown-menu{'aria-labelledby' => 'navbarDropdownMenuLink'}
             %a.dropdown-item{:href => '/'}
               .flag-icon
                 %i.flag.flag-gb
-              English
+              = t( 'gold.lang.english' )
             %a.dropdown-item{:href => '/fr/index.html' }
               .flag-icon
                 %i.flag.flag-fr
-              French
-
-
+              = t( 'gold.lang.french' )
 
   = partial :bdy

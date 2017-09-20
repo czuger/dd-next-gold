@@ -5,6 +5,9 @@ en:
     coins-change: Change your coins to
     game-icons: Icons come from
     menu_title: Weight
+    lang:
+      french: French
+      english: English
     labels:
         pp: pp
         gp: gp

@@ -5,6 +5,9 @@ fr:
     input-coins-desc: Entrez ici les pièces de votre personnage
     coins-change: Changez vos pièces pour
     menu_title: Weight
+    lang:
+      french: Français
+      english: Anglais
     labels:
         pp: pp
         gp: po
