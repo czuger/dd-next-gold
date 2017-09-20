@@ -1,23 +1,23 @@
 .page-header
-  #title-banner
-    #gold-icon
-      = image_tag('cash.svg')
-    #page-title
-      #gold-title
-        %h1
-          = t( '.gold.title' )
 
-      .dropdown
-        %button#dropdownMenuLink.btn.btn-secondary.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :type => 'button'}
-          Langue
-          .dropdown-menu{'aria-labelledby' => 'dropdownMenuLink'}
-            %a.dropdown-item{:href => '#'}
+  %nav.navbar.navbar-light.bg-light.navbar-expand-lg.justify-content-between
+    %a.navbar-brand{:href => '#'}
+      %img.d-inline-block.align-top{:alt => '', :height => '30', :src => '/img/cash.svg', :width => '30'}/
+      = t( 'gold.title' )
+
+    #navbarNavDropdown.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item.dropdown
+          %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown', :href => 'http://example.com'}
+            = t( 'gold.lang.french' )
+          .dropdown-menu{'aria-labelledby' => 'navbarDropdownMenuLink'}
+            %a.dropdown-item{:href => '/'}
               .flag-icon
                 %i.flag.flag-gb
-              Anglais
+              = t( 'gold.lang.english' )
             %a.dropdown-item{:href => '/fr/index.html' }
               .flag-icon
                 %i.flag.flag-fr
-              Français
+              = t( 'gold.lang.french' )
 
   = partial :bdy
