@@ -3,8 +3,20 @@
     #gold-icon
       = image_tag('cash.svg')
     #page-title
-      %h1
-        = t( '.gold.title' )
+      #gold-title
+        %h1
+          = t( '.gold.title' )
+
+      .dropdown
+        %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          Dropdown button
+          .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+            %div
+              %i.flag.flag-gb
+              %a.dropdown-item{:href => "/"} English
+            %div
+              %span.flag.flag-fr
+              %a.dropdown-item{:href => "/fr/index.html" } Français
 
   %hr
 

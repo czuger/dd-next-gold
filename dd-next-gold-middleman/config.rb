@@ -16,6 +16,8 @@ page '/*.txt', layout: false
 activate :i18n
 activate :sprockets
 
+set :images_dir, 'img'
+
 # set :debug_assets, true
 
 # With alternative layout
