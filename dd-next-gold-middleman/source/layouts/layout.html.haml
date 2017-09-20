@@ -25,21 +25,21 @@
 
   %body
 
-    .row
-      .col-11
-        -#%ul.nav
-        -#  %li.nav-item
-        -#    %a.nav-link.active{:href => gold_weight_path}
-        -#      = t( 'gold.menu_title' )
-        -#  %li.nav-item
-        -#    %a.nav-link.active{:href => gold_weight_path}
-        -#      = t( 'gold.change.menu_title' )
-      .col-1
-        #flags-area
-          = link_to '/set_locale/en', method: :put do
-            %span{ class: 'flag flag-gb' }
-          = link_to '/set_locale/fr', method: :put do
-            %span{ class: 'flag flag-fr' }
+    -#.row
+    -#  .col-11
+    -#    -#%ul.nav
+    -#    -#  %li.nav-item
+    -#    -#    %a.nav-link.active{:href => gold_weight_path}
+    -#    -#      = t( 'gold.menu_title' )
+    -#    -#  %li.nav-item
+    -#    -#    %a.nav-link.active{:href => gold_weight_path}
+    -#    -#      = t( 'gold.change.menu_title' )
+    -#  .col-1
+    -#    #flags-area
+    -#      = link_to '/set_locale/en', method: :put do
+    -#        %span{ class: 'flag flag-gb' }
+    -#      = link_to '/set_locale/fr', method: :put do
+    -#        %span{ class: 'flag flag-fr' }
 
     .container
       -#- flash.each do |name, msg|
