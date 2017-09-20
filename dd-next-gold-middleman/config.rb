@@ -16,6 +16,8 @@ page '/*.txt', layout: false
 activate :i18n
 activate :sprockets
 
+# set :debug_assets, true
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

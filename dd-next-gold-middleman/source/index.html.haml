@@ -4,13 +4,13 @@
       = image_tag('cash.svg')
     #page-title
       %h1
-        = t( '.title' )
+        = t( '.gold.title' )
 
   %hr
 
   .row
     .col
-      = t( '.input-coins-desc' )
+      = t( '.gold.input-coins-desc' )
   %br
   .row
     .col-6.col-sm-2
@@ -55,6 +55,12 @@
       = t( 'gold.labels.weightkg' )
 
   %hr
+
+  .row
+    .col
+      = t( 'gold.coins-change' )
+
+  %br
 
   .row
     .col-6.col-sm-2
@@ -120,7 +126,7 @@
   %hr
 
   #footer
-    = t( '.game-icons' )
+    = t( '.gold.game-icons' )
     = link_to 'game-icons.net', 'http://game-icons.net', target: '_blank'
   -#|
   -#= t( '.mentions-legales' )

@@ -1,9 +1,9 @@
 en:
   gold:
-    weight:
-      title: Coins weight
-      input-coins-desc: Input your current coins amount here
-      game-icons: Icons come from
+    title: Coins weight
+    input-coins-desc: Input your current coins amount there
+    coins-change: Change your coins to
+    game-icons: Icons come from
     menu_title: Weight
     labels:
         pp: pp
@@ -11,8 +11,8 @@ en:
         ep: ep
         sp: sp
         cp: cp
-        weight_label: "Current weight for gold : "
-        weight_label_after_conversion: "Gold weight after conversion : "
+        weight_label: "Current weight : "
+        weight_label_after_conversion: "Weight after conversion : "
         weightlb: Lb
         weightkg: kg
         change_tax: "Change tax (%)"
