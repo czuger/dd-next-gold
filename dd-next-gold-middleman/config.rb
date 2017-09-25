@@ -18,6 +18,19 @@ activate :sprockets
 
 set :images_dir, 'img'
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host          = 'hw'
+  deploy.path          = '/var/www/dd_next_gold/'
+  # Optional Settings
+  # deploy.user  = 'tvaughan' # no default
+  deploy.port  = 606 # ssh port, default: 22
+  # deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
+
+activate :gzip
+
 # set :debug_assets, true
 
 # With alternative layout
@@ -47,7 +60,7 @@ set :images_dir, 'img'
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
