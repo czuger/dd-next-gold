@@ -20,6 +20,16 @@
     -#= javascript_include_tag 'application', async: true
     -#= csrf_meta_tags
 
+    \<!-- Global site tag (gtag.js) - Google Analytics -->
+    \<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15363494-5"></script>
+    \<script>
+    \  window.dataLayer = window.dataLayer || [];
+    \  function gtag(){dataLayer.push(arguments);}
+    \  gtag('js', new Date());
+    \
+    \  gtag('config', 'UA-15363494-5');
+    \</script>
+
     = stylesheet_link_tag 'site'
     = javascript_include_tag 'site'
 
